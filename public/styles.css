@@ -1,0 +1,29 @@
+* {margin:0; padding:0;}
+body {font-family:helvetica;}
+
+header {font-size:100px; text-align:center; background:url('http://www.zappos.com/imgs/bg.png') repeat left top;}
+header h1 {position:relative; width:900px; margin:0 auto; padding-top:50px;}
+header span {display:block; float:left;}
+header .core-values {position:relative; float:right; margin:-143px 36px 0 0; font-size:150px; letter-spacing:-9px; font-family:'Lobster'; color:#7499C6;}
+header .zappos {position:relative; padding:0 0 0 70px; font-family:'Cabin'; font-size:221px; letter-spacing:-10px; color:#333; font-weight:400;}
+.zappos span {position:absolute; top:10px; left:0; text-shadow:1px -1px 0px #fff;}
+
+li {position:relative; clear:both; height:500px; list-style:none; text-align:center; text-shadow:2px 2px 0px rgba(0,0,0,.5);}
+.cvNumber {position:relative; left:44%; top:-33px; display:block; height:179px; width:150px; padding:21px 0 0; font-size:94px; text-align:center; text-shadow:0px -3px 1px rgba(255,255,255, .4); color:rgba(0,0,0, .7); background:url('/shield.png') no-repeat left top; text-decoration:none;}
+
+.coreValue {font-family:Georgia; font-size:100px;}
+
+#coreValue-1 {background:#A4B344; color:#ddd;}
+#coreValue-2 {background:#39BEEC; color:#ddd;}
+#coreValue-3 {background:#2A5480; color:#ddd;}
+#coreValue-4 {background:#FF5400; color:#ddd;}
+#coreValue-5 {background:#558ABE; color:#ddd;}
+#coreValue-6 {background:#889196; color:#ddd;}
+#coreValue-7 {background:#BDB7B7; color:#ddd;}
+#coreValue-8 {background:#7499C6; color:#ddd;}
+#coreValue-9 {background:#F8F8EE; color:#ddd;}
+#coreValue-10 {background:#646E39; color:#ddd;}
+
+footer {position:relative; clear:both;}
+footer a {position:absolute; left:44%; top:-38px; display:block; width:150px; padding:10px 0; background:rgba(0,0,0,.3); color:#fafafa; text-shadow:1px 1px 0px #000; text-decoration:none; text-align:center; -webkit-border-radius:5px 5px 0 0;}
+
