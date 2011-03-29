@@ -1,6 +1,7 @@
 $(document).ready(function() {
   getCoreValues();    
   setupScrolly();
+  setupEnding();
 });
 
 function getCoreValues() {
@@ -10,21 +11,15 @@ function getCoreValues() {
   $.ajax({
     url: '/api/CoreValue',
     success: function (res) {
-      var cvs = res.values
-          len = cvs.length,
-          mainList = ['<ul id="cvList">'];
 
-      for (var i = 0; i < len; i++) {
-        var c = cvs[i];
-        mainList.push('<li id="coreValue-', c.id, '"><a href="#coreValue-', c.id, '" class="cvNumber">', c.id, '</a><section class="coreValue">', c.name, '</section></li>');
-      }
+      var model = {
+        values: res.values
+      };
 
-      mainList.push('</ul>');
-      $('#wrap').append(mainList.join(''));
+      $('#wrap').append(Mustache.to_html($('#listValues').html(), model));
 
       $('#cvList li').height($(window).height() - 30);
 
-      //console.log(res);
     }
   });
 }
@@ -41,4 +36,16 @@ function setupScrolly() {
     }
       
   });
+}
+
+function setupEnding() {
+  $('#topLink').click(function(e) {
+    e.preventDefault();
+    
+    $('html,body').animate({scrollTop: 0}, 1000);
+
+    window.setTimeout(function() {
+      $('#sharingIsCaring').fadeIn('slow');
+    }, 1000);
+  }); 
 }

@@ -9,14 +9,36 @@
 </head>
 <body>
 <header id="branding">
-<h1><span class="zappos"><span>Z</span>appos</span> <span class="core-values">Core Values</span></h1>
+  <h1><span class="zappos"><span>Z</span>appos</span> <span class="core-values">Core Values</span></h1>
+  <section id="sharingIsCaring">
+    <span id="fb"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.zapposcorevalues.us&amp;layout=box_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:65px;" allowTransparency="true"></iframe></span> 
+    <span id="tw"><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></span>
+    <p>Thanks!</p>
+  </section>
 </header>
 <div id="wrap">
 </div>
 <footer>
-<a href="#top">Back To Top</a>
+<a href="#top" id="topLink">Back To Top</a>
 </footer>
+
+<script type="text/html" id="listValues">
+  <ul id="cvList">
+    {{#values}}
+    <li id="coreValue-{{id}}">
+      <section class="description">{{description}}</section>
+      <a href="#coreValue-{{id}}" class="cvNumber">{{id}}</a>
+      <section class="coreValue">{{name}}</section>
+      <div class="valueMeta">
+        <section class="summary">{{summary}}</section>
+      </div>
+    </li>
+    {{/values}}
+  </ul>
+</script>
+
 <script src="/jquery.js"></script>
+<script src="/mustache.js"></script>
 <script src="/behave.js"></script>
 </body>
 </html>
