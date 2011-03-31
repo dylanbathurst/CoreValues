@@ -1,6 +1,6 @@
 * {margin:0; padding:0;}
 
-header {font-size:100px; text-align:center; background:url('http://www.zappos.com/imgs/bg.png') repeat left top;}
+header {font-size:100px; text-align:center; background:url('/bg.png') repeat left top;}
 header h1 {position:relative; width:900px; margin:0 auto; padding-top:50px;}
 header span {display:block; float:left;}
 header .core-values {position:relative; float:right; margin:-143px 4px 0 0; font-size:150px; letter-spacing:-9px; font-family:'Lobster'; color:#7499C6;}
@@ -13,7 +13,7 @@ header .zappos {position:relative; padding:0 0 0 70px; font-family:'Cabin', helv
 .zappos span {position:absolute; top:10px; left:0; text-shadow:1px -1px 0px #fff;}
 
 li {position:relative; clear:both; height:500px; list-style:none; text-align:center; text-shadow:2px 2px 0px rgba(0,0,0,.5);}
-.cvNumber {position:relative; left:44%; top:-33px; z-index:2; display:block; height:159px; width:150px; padding:21px 0 0; font-size:94px; text-align:center; text-shadow:0px -3px 1px rgba(255,255,255, .4); color:rgba(0,0,0, .7); background:url('/shield.png') no-repeat left top; text-decoration:none;}
+.cvNumber {position:relative; left:44%; top:-33px; z-index:2; display:block; height:159px; width:150px; padding:21px 0 0; font-size:94px; text-align:center; text-shadow:0px -3px 1px rgba(255,255,255, .4); color:rgba(0,0,0, .7); background:rgba(0,0,0,.3); text-decoration:none;}
 
 .coreValue {position:absolute; top:170px; bottom:0; z-index:2; font-family:'Lobster'; font-size:90px;}
 .valueMeta {position:absolute; top:170px; bottom:0; z-index:2; font-family:'Cabin'; font-size:40px;}
@@ -79,5 +79,5 @@ li {position:relative; clear:both; height:500px; list-style:none; text-align:cen
 #coreValue-10 {background:#bada55; color:#ddd;}
 
 footer {position:relative; clear:both;}
-footer a {position:absolute; left:44%; top:-38px; z-index:4; display:block; width:150px; padding:10px 0; background:rgba(0,0,0,.3); color:#fafafa; text-shadow:1px 1px 0px #000; text-decoration:none; text-align:center; -webkit-border-radius:5px 5px 0 0; letter-spacing:2px; font-family:'Lobster';}
+footer a {position:absolute; left:44%; top:-38px; z-index:4; display:none; width:150px; padding:10px 0; background:rgba(0,0,0,.3); color:#fafafa; text-shadow:1px 1px 0px #000; text-decoration:none; text-align:center; -webkit-border-radius:5px 5px 0 0; letter-spacing:2px; font-family:'Lobster';}
 
