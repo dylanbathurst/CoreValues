@@ -30,19 +30,8 @@ coreValueApp.prototype = {
         $('#cvList li').height($(window).height() - 30);
         $('#topLink').show();
 
-        //self.pulsate();
-
       }
     });
-  },
-
-  pulsate: function() {
-    var first = $('.cvNumber').eq('0');         
-
-    window.setInterval(function() {
-      first.fadeOut('fast');
-    },500);
-
   },
 
   setupScrolly: function() {
@@ -56,8 +45,15 @@ coreValueApp.prototype = {
       var target = $(e.target);
       if (target[0].tagName.toLowerCase() == 'a') {
         
+        var num = target.find('.arrow').text();
         var scrollTo = (target.offset().top);
         $('html,body').animate({scrollTop: scrollTo}, 200);
+        //self.cvState = num;
+
+      } else if (target.hasClass('arrow')) {
+
+        target.parent().click();
+
       }
         
     });
@@ -66,6 +62,7 @@ coreValueApp.prototype = {
 
       var key = e.keyCode;
 
+      console.log(self.cvState);
       if (key == '40') {
 
         // down

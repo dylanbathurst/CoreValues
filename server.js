@@ -38,7 +38,7 @@ function setupUrls(app) {
 connect.createServer(
   connect.router(setupUrls),
   connect.static(__dirname + '/public')
-).listen(8000);
+).listen(80);
 
 
 
